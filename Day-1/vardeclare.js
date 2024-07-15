@@ -11,7 +11,8 @@
    console.log(str);
 
 /* Task:3 Declare a variable using const, assign it a boolean value, 
-   and log the value to the console.*/ 
+   and log the value to the console. 
+*/ 
 
    const isLogIn = 1;
    const isLoggedIn = Boolean(isLogIn)
@@ -21,7 +22,8 @@
    //const isNotAdutl = false;
 
 /* Task 5:  Declare a variable using let, assign it an initial valve, 
-   reassign a new value and log the both values to the console */
+   reassign a new value and log the both values to the console. 
+*/
 
    let name = "swati singh"
    console.log(name);
@@ -32,7 +34,7 @@
 /* Task 4: Create Variable of different data types 
    (numbers, boolean, string, object, array) 
    and log each variables type of using the type of operator.
-   */ 
+*/ 
 
 // This is number data type.
 
@@ -58,7 +60,7 @@
    console.log(array);
    console.log(typeof array);
 
-// Object data type
+// Object data type.
 
    const myId = { 
     name : "swati",
@@ -68,5 +70,14 @@
    console.log(myId);
    console.log(typeof myId);
 
+/* Task 6: Trying the reassigning a variable declare with const
+   and observe the error. */ 
 
+   const year = 2024;
+   year = 2025;
+   console.log(year); // Error , Assignment to constant variable
 
+/* Values of const can't be changed with re-assignment & they
+   can notbe re-declared. */ 
+
+   
