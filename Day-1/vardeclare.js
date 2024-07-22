@@ -74,7 +74,7 @@
    and observe the error. */ 
 
    const year = 2024;
-   year = 2025;
+   // year = 2025;
    console.log(year); // Error , Assignment to constant variable
 
 /* Values of const can't be changed with re-assignment & they
