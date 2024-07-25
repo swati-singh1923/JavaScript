@@ -39,9 +39,10 @@
 /* Task 4: Write a program that uses the ternary operator to check if a number 
    is negative or positive and log the result to the console. */
    
-   let marks = 86;
-   let result = (marks >40)? "pass" : "fail";
-   console.log(result);
+   let num = -34;
+   let ans = num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+   console.log(ans);
+
 
 
 
