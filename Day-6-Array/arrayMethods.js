@@ -108,3 +108,12 @@ console.log(color);           //['black', 'brown', 'gray', 'green', 'pink', 'voi
 
 let numbers = [43, 23, 6, 87, 34, 98];
 console.log(numbers.sort());    //[ 23, 34, 43, 6, 87, 98 ]
+
+/*Task 6:For the given start of an array, change it to final from using splice.
+start: ['january', 'july', 'march', 'august']
+final: ['july', 'june', 'march', 'august'] */
+
+let start = ["jaunary", "july", "march", "august"];
+console.log(start.splice(0, 1));
+console.log(start.splice(1, 'july', 'june'))
+console.log(start);
