@@ -7,9 +7,9 @@ while(guess != fav_movie && guess != "quit"){
 }
 
 if(guess == fav_movie){
-    console.log("Your guess is correct.");
+    alert("Your guess is correct.");
 }
 
 else{
-    console.log("You can quit");
+    alert("You can quit");
 }
