@@ -1,3 +1,5 @@
+//Write a javascript program to guess the favorite movie.A
+
 const fav_movie = "Harry Potter";
 let guess = prompt("Guess my favorite movie?");
 while(guess != fav_movie && guess != "quit"){
