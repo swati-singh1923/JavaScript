@@ -111,11 +111,86 @@ function calculateCart(num1){
 
 console.log(calculateCart(200,376,8));  //200
 
-function calculateCartPrice(...num1){
+function calculateCartPrice(...num1){   // (...)Rest Operator
+    
     return num1
 }
 
 console.log(calculateCartPrice(200,376,8));  
+
+
+//Create a function that returns the sum of numbers from 1 to n.
+
+function returnSumOf(n){
+    let sum = 0;
+    for(let i=1; i<=n; i++){
+        sum = sum + i;
+    }
+    return sum
+}
+
+console.log(returnSumOf(10));
+
+//Function with array
+
+let array = ["hiii", "hello", "hey", "bye"];
+
+function myArray(getArray){
+    return getArray[1]
+}
+
+console.log(myArray(array))
+console.log(myArray(array[1]))
+
+//Pass the array in function
+
+function myNewArray(getArray){
+    return getArray[2]
+}
+
+console.log(myNewArray([400, 500, 120, 200]));
+
+//Function with Objects.
+
+let myObject = {
+    user : "Sam",
+    price : 400
+};
+
+function handleObject(getObject){
+
+    return `Username is ${getObject.user}, and price is ${getObject.price}.`
+}
+
+console.log(handleObject(myObject));
+
+console.log(handleObject({
+    user : "Jhon",
+    price : 500
+}));
+
+//Create a function that returns the concatenation of all strings in an array.
+
+let string = [200, 300, 500, 120, 320];
+
+function concatenationOfString(concatString){
+    let result = " ";
+    let sum = 0;
+    for(let i=0; i<string.length; i++){
+        result +=string[i];
+        //sum = sum + string[i];
+        //result = sum;
+    }
+    return result;
+}
+
+console.log(string);
+console.log(concatenationOfString(string));
+
+
+
+
+
 
 
 
