@@ -187,6 +187,21 @@ function concatenationOfString(concatString){
 console.log(string);
 console.log(concatenationOfString(string));
 
+//Scope: Scope determines the accessibility of variables objects and functions from different parts of the code.
+
+
+
+function calSum(a,b){
+
+    let sum = a+b
+    return sum
+
+}
+
+console.log(calSum(2,4));
+//console.log(sum);     //error sum is not defined
+
+
 
 
 
