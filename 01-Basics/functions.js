@@ -71,5 +71,53 @@ function printTable(num){
 printTable(5);
 printTable(7);
 
+//Return Keyword:Return keyword is used to return some value from the function.
+
+function loggedIn(username){
+    // if(!username){
+    //     console.log("Please enter your username.");
+    //     return
+    // }else{
+    //     console.log("quit")
+    //     return 
+    // }
+    return `${username} just logged in.`
+}
+
+console.log(loggedIn("Swati"));
+console.log(loggedIn());          //undefined just logged in.
+
+
+function isAdult(age){
+    if(age>=18){
+        return "Adult"
+    }
+    else{
+        return "Not Adult."
+    }
+
+    console.log("you can vote.");  //Not reachable code 
+}
+
+console.log(isAdult(15));
+
+//When js reaches a "return" statement, the function will stop executing.
+
+//Calculate shopping cart value.
+
+function calculateCart(num1){
+    return num1
+}
+
+console.log(calculateCart(200,376,8));  //200
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(200,376,8));  
+
+
+
 
 
