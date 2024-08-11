@@ -194,12 +194,54 @@ console.log(concatenationOfString(string));
 function calSum(a,b){
 
     let sum = a+b
-    return sum
+    return sum            //Function scope
 
 }
 
 console.log(calSum(2,4));
 //console.log(sum);     //error sum is not defined
+
+for(let i=1; i<=5; i++){
+    console.log(i);       //Block Scope
+}
+
+//console.log(i);       //Not accessible from outside of block
+
+function outerFun(){
+    let username = "Sam";
+    //console.log(website);   //error website is not defined
+   
+    function innerFun(){
+        let website = "Youtube";
+        console.log("Username is",username);
+        console.log("Website is",website);
+    }
+     
+    //console.log(website);   //error website is not defined
+    innerFun();
+    
+}
+
+outerFun();
+
+
+//Function Expression
+
+console.log(addOne(6));
+
+function addOne(num){
+    return num + 1
+}
+
+//addOne(6);
+
+//addTwo(8);  //Cannot access 'addTwo' before initialization
+const addTwo = function(num){
+    return num + 2
+}
+
+addTwo(7);
+
 
 
 
