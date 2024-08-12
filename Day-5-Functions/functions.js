@@ -26,6 +26,21 @@ function calculateSqr(num){
 let result = calculateSqr(5);
 console.log(`Square is: ${result} `);
 
+/*Create a function using the function keyword that takes a string as an argument & returns the 
+numbers of vowels in the string. */
+
+function countVowels(str){
+    let count = 0;
+    for(const char of str){
+        if(char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u'){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels("Hello! I am Sam"));
+
 //Activity 2: Function Expression
 
 //Write a function expression to find the maximum of two numbers and log the result to the console.
@@ -90,3 +105,45 @@ const charOfStr = (str) => {
 }
 
 console.log(charOfStr("apna college"));
+
+//Activity 4: Function Parameters and Default values.
+
+/*Write a function that takes two parameters and returns their product and provides a default 
+value to second parameter. */
+
+const takingParameter = function(prod1, prod2 = "Laptop"){
+    return `Product one is ${prod1}, and product two is ${prod2}.`
+}
+
+console.log(takingParameter("Android", "iphone"));
+console.log(takingParameter("Android"));
+
+/*Write a function that takes person's name and age and returns a greeting message.provide a 
+default value to age. */
+
+function personInfo(name, age = 23){
+    return `Namaste! ${name}'s age is ${age}.`
+}
+
+console.log(personInfo("Sam", 25));
+console.log(personInfo("Sam"));
+
+//Higher order function
+
+/*Write a higher-order function that takes a function and a number, and call the function at 
+many times. */
+
+function higherOrder(func, num){
+    for(let i=1; i<=num; i++){
+        func();
+    }
+}
+
+let greet = function(str){
+    console.log("Namaste!");
+}
+
+higherOrder(greet, 3);
+
+/*Write a higher-order function that takes two functions and one value, applise the first function
+ to the value and then applies the second function to result. */
