@@ -117,3 +117,40 @@ let start = ["jaunary", "july", "march", "august"];
 console.log(start.splice(0, 1));
 console.log(start.splice(1, 'july', 'june'))
 console.log(start);
+
+//Array Method (Intermediate)
+
+/*Task 7:Use the map method to create a new array where each number is doubled and log the new 
+array*/ 
+
+let array = [10, 20, 30, 40, 50, 60];
+
+let ansArray = array.map((number) => {
+    return number * 2;
+});
+
+console.log("Doubled array:",ansArray);
+
+//Task 8:Use the filter method to create new array with only even numbers and log the new array.
+
+let arr1 = [21, 34, 54, 12, 61, 79, 98, 89, 24, 23];
+
+let evenArray = arr1.filter((num) => {
+    return num % 2 ===  0;
+});
+
+console.log("Array of even numbers:",evenArray);
+
+//Task 9:Use the reduce method to calculate the sum of all numbers in the array and log the result.
+
+let arr2 = [10, 20, 30, 40, 50, 60];
+
+let sumOfArr = arr2.reduce((acc, curr) => {
+    return acc + curr;
+},0);
+
+console.log("Sum of array:",sumOfArr);
+
+
+
+

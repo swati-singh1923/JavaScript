@@ -59,8 +59,39 @@ for(let chars of char){
 
 for(list of heros){
     console.log(list);
-    for(hero of list){
+    for(let hero of list){
         console.log(hero);
     }
 }
+
+//Activity 4: Array Iteration
+
+//Use a for loop to iterate over the array and log each element to console.
+
+let arr = [10, 20, 30, 40, 50, 60];
+for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+}
+
+//using for of loop
+
+for(let num of arr){
+    console.log(num);
+}
+
+//Use the forEach method to iterate over array and log each element to console.
+
+let newArr = ['love', 'babbar', 'youtube', 'hello!'];
+newArr.forEach((value, index) => {
+    console.log("Value is:",value, " Index :",index);
+});
+
+//For a given array of numbers print the square of each value using forEach loop.
+
+let numbers = [2,3,4,5,6,7,8];
+numbers.forEach((sqr) => {
+    console.log(sqr**2);
+});
+
+
 
