@@ -21,12 +21,61 @@ const library = {
            author : "Acharya Prashant",
            year : 2019,
            pages : 200
-        }],
+        }
+        ],
     }
 }
 
-//console.log(library);
+console.log(library);
+
+//Access and log the name of the library and the titles of all books in the library.
+
+console.log(library["name"]);
+
 console.log(library.name["libraryName"]);
+
+console.log(library.books.book);
+
+console.log(Object.keys(library.books));
+//not completed
+
+
+
+
+
+//The this keyword: this keyword refers to an object that is executing the current piece of code. 
+
+const student = {
+    name : "Aman",
+    id : 101,
+    department : "CSE",
+    property : this,
+    marks : "9.5 cgpa",
+
+    getName : function() {                            
+        console.log(`Student name is ${this.name}`);
+    },
+
+    getMarks: () => {                                  
+        console.log(`Marks is ${this.marks}`);
+    }
+}
+
+//console.log(student.getName());
+student.getName();     //Student name is Aman
+
+student.getMarks();   //Marks is undefined
+//this keyword scope is parent's scope which is window object
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 
 const book = {
     title : "Vedant",
-    author: "Acharya Prashant",
+    author : "Acharya Prashant",
     year : 2024
 };
 
@@ -22,7 +22,7 @@ log the result of calling this method. */
 
 let book2 = {
     title : "Women's Revolution",
-    author: "Acharya Prashant",
+    author : "Acharya Prashant",
     year : 2023,
     getValue: function(){
         console.log(`The author of ${this.title} is ${this.author}.`);
@@ -51,5 +51,21 @@ const book3 = {
 
 console.log(book3.getYear(1998));
 console.log(book3);
+
+/*Add a method to the book object that uses the this keword to return a string with the book title 
+and log the result of calling this method. */
+
+const book4 = {
+    title : "Bhagvat Geeta",
+    author : "Acharya Prashant",
+    year : 2018,
+
+    getYear: function() {
+        console.log(`The book title is ${this.title}, published in ${this.year}.`);
+        
+    }
+};
+
+book4.getYear();
 
 
