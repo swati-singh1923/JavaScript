@@ -21,7 +21,7 @@ const library = {
            author : "Acharya Prashant",
            year : 2019,
            pages : 200
-        }
+        },
         ],
     }
 }
@@ -37,7 +37,12 @@ console.log(library.name["libraryName"]);
 console.log(library.books.book);
 
 console.log(Object.keys(library.books));
-//not completed
+
+library.books.book.forEach(element => {
+    console.log(element.title);
+    
+});
+
 
 
 
